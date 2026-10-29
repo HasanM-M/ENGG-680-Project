@@ -11,6 +11,7 @@ RESULTS_DIR = ROOT / "results"
 
 DRIVE_IMG_DIR = DATA_DIR / "images"      # slow to read from
 IMG_DIR = Path("/content/images")        # local copy; copy images here each session
+IMG_CACHE = DATA_DIR / "images_224.npy"
 
 # ---------- Reproducibility ----------
 SEEDS = [0, 1, 2]
