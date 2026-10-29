@@ -2,7 +2,7 @@
 from pathlib import Path
 
 # ---------- Paths ----------
-ROOT = Path("/content/drive/MyDrive/ENGG 680 - Group 2")   # change if your folder name differs
+ROOT = Path("/content/drive/MyDrive/ENGG 680 - Group 2")   
 DATA_DIR = ROOT / "Project Dataset/PAD-UFES-20"
 META_CSV = DATA_DIR / "metadata.csv"
 FOLDS_CSV = DATA_DIR / "folds.csv"
