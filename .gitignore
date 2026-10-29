@@ -218,3 +218,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Prevent large data or file push
+data/
+preds/
+results/
+*.pt
+*.pth
+.ipynb_checkpoints/
