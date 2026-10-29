@@ -1,7 +1,7 @@
 # config.py
 from pathlib import Path
 
-# ---------- Paths (Google Drive via Colab) ----------
+# ---------- Paths ----------
 ROOT = Path("/content/drive/MyDrive/ENGG 680 - Group 2")   # change if your folder name differs
 DATA_DIR = ROOT / "Project Dataset/PAD-UFES-20"
 META_CSV = DATA_DIR / "metadata.csv"
@@ -23,7 +23,7 @@ LABEL_COL = "diagnostic"
 IMG_COL = "img_id"
 CANCER_CODES = ["BCC", "SCC", "MEL"]     # positive class; everything else = 0
 
-# ---------- Metadata groups (verify names against your CSV) ----------
+# ---------- Metadata groups ----------
 GROUPS = {
     "demographics": ["age", "gender", "fitspatrick"],
     "lifestyle":    ["smoke", "drink", "pesticide",
@@ -46,7 +46,7 @@ CONFIGS = {
     "img+shuffled": ALL,
 }
 
-# ---------- Model / training (tune on image_only, then freeze) ----------
+# ---------- Model / training ----------
 BACKBONE = "resnet18"
 IMG_SIZE = 224
 BATCH_SIZE = 32
